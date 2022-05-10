@@ -1,0 +1,367 @@
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ echo "text" 1.txt
+text 1.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git add .
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git commit -m "f"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git commit -m "e"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ ls
+felicia.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ echo "text" > 1.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ l
+bash: l: command not found
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ ls
+1.txt  felicia.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git add .
+warning: LF will be replaced by CRLF in 1.txt.
+The file will have its original line endings in your working directory
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git commit -m "e"
+[master 4b1525c] e
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git push -u origin  master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ferdi-leube/Ironferdi.git
+   30f2837..4b1525c  master -> master
+branch 'master' set up to track 'origin/master'.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git checkout classmate
+Switched to branch 'classmate'
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ echo "text2" > 1.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git push -u origin  master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git add .
+warning: LF will be replaced by CRLF in 1.txt.
+The file will have its original line endings in your working directory
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git commit -m "e"
+[classmate 953d2c0] e
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git push -u origin  master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git push -u origin  classmate
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 278 bytes | 278.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'classmate' on GitHub by visiting:
+remote:      https://github.com/ferdi-leube/Ironferdi/pull/new/classmate
+remote:
+To https://github.com/ferdi-leube/Ironferdi.git
+ * [new branch]      classmate -> classmate
+branch 'classmate' set up to track 'origin/classmate'.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git log
+commit 953d2c0b1380ddae3ae6faeed0b5f1a090c5c305 (HEAD -> classmate, origin/classmate)
+Author: [Felicia] <[feliciaonwudinjo@gmail.com]>
+Date:   Tue May 10 11:36:23 2022 +0100
+
+    e
+
+commit 314c218b25539736136aedfd4667365d5d163897
+Author: [Felicia] <[feliciaonwudinjo@gmail.com]>
+Date:   Tue May 10 10:44:48 2022 +0100
+
+     we want to cause a new conflict
+
+commit 62e9f01e0953ee7ff8097627b2f79528978a980b
+Author: [Felicia] <[feliciaonwudinjo@gmail.com]>
+Date:   Tue May 10 10:31:01 2022 +0100
+
+    this is the content we are working with
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ cat felicia.txt
+
+this is some content we are going to work with
+content to be appended totally different content to merge with later classmate
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git remote add origin https://github.com/ferdi-leube/Ironferdi.git
+error: remote origin already exists.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git remote set-url origin https://github.com/ferdi-leube/Ironferdi.git
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git push -u origin  master
+remote: Permission to ferdi-leube/Ironferdi.git denied to Leecia-2864.
+fatal: unable to access 'https://github.com/ferdi-leube/Ironferdi.git/': The requested URL returned error: 403
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git push -u origin  master
+remote: Permission to ferdi-leube/Ironferdi.git denied to Leecia-2864.
+fatal: unable to access 'https://github.com/ferdi-leube/Ironferdi.git/': The requested URL returned error: 403
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git push -u origin  master
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (16/16), 1.49 KiB | 1.49 MiB/s, done.
+Total 16 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/ferdi-leube/Ironferdi/pull/new/master
+remote:
+To https://github.com/ferdi-leube/Ironferdi.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ echo "text" 1.txt
+text 1.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git add .
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git commit -m "f"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git commit -m "e"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ ls
+felicia.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ echo "text" > 1.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ l
+bash: l: command not found
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ ls
+1.txt  felicia.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git add .
+warning: LF will be replaced by CRLF in 1.txt.
+The file will have its original line endings in your working directory
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git commit -m "e"
+[master 4b1525c] e
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git push -u origin  master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ferdi-leube/Ironferdi.git
+   30f2837..4b1525c  master -> master
+branch 'master' set up to track 'origin/master'.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (master)
+$ git checkout classmate
+Switched to branch 'classmate'
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ echo "text2" > 1.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git push -u origin  master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git add .
+warning: LF will be replaced by CRLF in 1.txt.
+The file will have its original line endings in your working directory
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git commit -m "e"
+[classmate 953d2c0] e
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git push -u origin  master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git push -u origin  classmate
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 278 bytes | 278.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'classmate' on GitHub by visiting:
+remote:      https://github.com/ferdi-leube/Ironferdi/pull/new/classmate
+remote:
+To https://github.com/ferdi-leube/Ironferdi.git
+ * [new branch]      classmate -> classmate
+branch 'classmate' set up to track 'origin/classmate'.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git log
+commit 953d2c0b1380ddae3ae6faeed0b5f1a090c5c305 (HEAD -> classmate, origin/classmate)
+Author: [Felicia] <[feliciaonwudinjo@gmail.com]>
+Date:   Tue May 10 11:36:23 2022 +0100
+
+    e
+
+commit 314c218b25539736136aedfd4667365d5d163897
+Author: [Felicia] <[feliciaonwudinjo@gmail.com]>
+Date:   Tue May 10 10:44:48 2022 +0100
+
+     we want to cause a new conflict
+
+commit 62e9f01e0953ee7ff8097627b2f79528978a980b
+Author: [Felicia] <[feliciaonwudinjo@gmail.com]>
+Date:   Tue May 10 10:31:01 2022 +0100
+
+    this is the content we are working with
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git reset --hard 32a63d7d09589d80a8ff614be85d854792798aee
+fatal: Could not parse object '32a63d7d09589d80a8ff614be85d854792798aee'.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git reset --hard 62e9f01e0953ee7ff8097627b2f79528978a980b
+HEAD is now at 62e9f01 this is the content we are working with
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (classmate)
+$ git checkout -b lab-resolving-git-conflicts
+Switched to a new branch 'lab-resolving-git-conflicts'
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (lab-resolving-git-conflicts)
+$ git add about.txt
+fatal: pathspec 'about.txt' did not match any files
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (lab-resolving-git-conflicts)
+$ git add about.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (lab-resolving-git-conflicts)
+$ git commit -m "about my readme file"
+[lab-resolving-git-conflicts e5ba211] about my readme file
+ 1 file changed, 16 insertions(+)
+ create mode 100644 about.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (lab-resolving-git-conflicts)
+$ git log
+commit e5ba21199cafc41820de98f835b67e5851c252da (HEAD -> lab-resolving-git-conflicts)
+Author: [Felicia] <[feliciaonwudinjo@gmail.com]>
+Date:   Tue May 10 11:46:07 2022 +0100
+
+    about my readme file
+
+commit 62e9f01e0953ee7ff8097627b2f79528978a980b (classmate)
+Author: [Felicia] <[feliciaonwudinjo@gmail.com]>
+Date:   Tue May 10 10:31:01 2022 +0100
+
+    this is the content we are working with
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (lab-resolving-git-conflicts)
+$ git pull origin master
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (lab-resolving-git-conflicts)
+$ git status
+On branch lab-resolving-git-conflicts
+nothing to commit, working tree clean
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (lab-resolving-git-conflicts)
+$ echo "text" > felicia.txt
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (lab-resolving-git-conflicts)
+$ git add .
+warning: LF will be replaced by CRLF in felicia.txt.
+The file will have its original line endings in your working directory
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (lab-resolving-git-conflicts)
+$ git commit -m "a"
+[lab-resolving-git-conflicts 69826bc] a
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (lab-resolving-git-conflicts)
+$ git pull origin master
+From https://github.com/ferdi-leube/Ironferdi
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (lab-resolving-git-conflicts)
+$ git pull origin clasmate
+fatal: couldn't find remote ref clasmate
+
+felic@LAPTOP-HUB0AQ1B MINGW64 ~/OneDrive/Desktop/Ironferdi/git-new-conflicts (lab-resolving-git-conflicts)
+$ git pull origin classmate
+From https://github.com/ferdi-leube/Ironferdi
+ * branch            classmate  -> FETCH_HEAD
+   953d2c0..a1b7286  classmate  -> origin/classmate
+Already up to date.
+
